@@ -19,12 +19,12 @@ Required packages to be present on the system:
 All keybindings can be listed with CTRL-H.
 
 The custom keybindings are prefixed to a quicker grep:
-* Generic: various shortcuts, not linked to any plugin
-* Neotree: file browser
-* Telescope: file search and grep shortcuts
-* Fugitive: git shortcuts
-* nvim-lspconfig: LSP servers shortcuts
-* none-lua: code formatters
+* **Generic**: various shortcuts, not linked to any plugin
+* **Neotree**: file browser
+* **Telescope**: file search and grep shortcuts
+* **Fugitive**: git shortcuts
+* **nvim-lspconfig**: LSP servers shortcuts
+* **none-lua**: code formatters
 
 # Installed plugins
 
