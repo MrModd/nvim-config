@@ -89,3 +89,19 @@ Similar to Mason-lspconfig, but for whatever tool that Mason handles, not only L
 ### None-ls
 
 Binding between Neovim and the formatters
+
+## Autocomplete
+
+There are 2 ways to make the autocomplete work. One is through a direct
+configuration of nvim-cmp (cmp stands for completion), the other one is
+exploiting the LSP servers to give snippets of code.
+
+### Nvim-cmp
+
+This has **LuaSnip**, **cmp_luasnip** and **friendly-snippets** as dependencies.
+These three are used to populate the autocompletion for LUA.
+
+### Autocompletion using LSP servers
+
+This is based on **cmp-nvim-lsp**. It adds autocomplete capabilities to nvim-cmp
+using the LSP servers configured in nvim-lspconfig.

@@ -27,19 +27,19 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      -- local capabilities = require("cmp_nvim_lsp").default_capabilities()
+      local capabilities = require("cmp_nvim_lsp").default_capabilities()
       local lspconfig = require("lspconfig")
       lspconfig.bashls.setup({ -- Bash
-        -- capabilities = capabilities
+        capabilities = capabilities
       })
       lspconfig.lua_ls.setup({ -- Lua
-        -- capabilities = capabilities
+        capabilities = capabilities
       })
       lspconfig.clangd.setup({ -- C
-        -- capabilities = capabilities
+        capabilities = capabilities
       })
       lspconfig.pylsp.setup({ -- Python
-        -- capabilities = capabilities,
+        capabilities = capabilities,
         settings = {
           pylsp = {
             plugins = {
