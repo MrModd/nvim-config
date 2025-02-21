@@ -19,10 +19,11 @@ vim.cmd("set showcmd")
 vim.cmd("set nocompatible")
 -- Indentation
 vim.cmd("set autoindent smartindent")
-vim.cmd("set smarttab")
-vim.cmd("set tabstop=4")
-vim.cmd("set softtabstop=4")
-vim.cmd("set shiftwidth=4")
+vim.cmd("set expandtab") -- Always use spaces instead of tabs
+--vim.cmd("set nosmarttab noexpandtab") -- Convert spaces into tabs when possible
+vim.cmd("set tabstop=4") -- How many columns a tab character is
+vim.cmd("set softtabstop=2") -- How many spaces a shift or backspace key inserts or removes
+vim.cmd("set shiftwidth=4") -- How many columns a >> operation adds
 -- Increase history of last commands
 vim.cmd("set history=200")
 -- Increase undo buffer
