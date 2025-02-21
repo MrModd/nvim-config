@@ -17,10 +17,11 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = {"bashls",
+        ensure_installed = {"bashls", -- Installed through npm
                             "lua_ls",
-                            "clangd",
-                            "pylsp"}
+                            "clangd", -- Not compatible with aarch64
+                            "pylsp",
+        }
       })
     end
   },

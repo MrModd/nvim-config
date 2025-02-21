@@ -12,9 +12,9 @@ return {
       require('mason-tool-installer').setup({
         ensure_installed = {
           "stylua", -- Formatter for LUA
-          "clang-format", -- Foratter for C
-          "black", -- Formatter for Python
-          "isort" -- Formatter for the imports of Python
+          "clang-format", -- Formatter for C
+          "black", -- Formatter for Python (requires Python >3.9)
+          "isort" -- Formatter for the imports of Python (requires Python >3.9)
         }
       })
     end
