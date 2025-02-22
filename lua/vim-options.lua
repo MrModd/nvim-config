@@ -35,8 +35,6 @@ vim.cmd("set backspace=indent,eol,start")
 vim.cmd("set linebreak")
 -- Don't wrap lines when they are too long (makes previous command useless)
 vim.cmd("set nowrap")
--- Use 2 lines for the vim commands at the bottom of the screen
-vim.cmd("set cmdheight=2")
 -- Open the new splts on the right and below
 vim.cmd("set splitbelow")
 vim.cmd("set splitright")
@@ -48,7 +46,7 @@ vim.cmd("set foldmethod=marker")
 -- Allow usage of the mouse
 vim.cmd("set mouse=a")
 -- Use the system clipboard as buffer for yank (on ssh it requires X forwarding)
-vim.cmd("set clipboard=unnamedplus")
+vim.cmd("set clipboard+=unnamedplus")
 -- Invisible characters configurations (eg. trailing spaces and tabs)
 -- vim equivalent: set listchars=tab:▸\ ,eol:¬,trail:·
 vim.opt.listchars = {tab = "▸ ", eol = "¬", trail = "·"}
