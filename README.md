@@ -109,3 +109,7 @@ using the LSP servers configured in nvim-lspconfig.
 ## Alpha-nvim
 
 Just a splash screen if no file is open.
+
+## Lastplace
+
+Reopen the files at the last edit position.
