@@ -16,7 +16,7 @@ Required packages to be present on the system:
 
 # Keybindings
 
-All keybindings can be listed with CTRL-H.
+All keybindings can be listed with CTRL-z.
 
 The custom keybindings are prefixed to a quicker grep:
 * **Generic**: various shortcuts, not linked to any plugin
