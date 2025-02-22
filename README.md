@@ -105,3 +105,7 @@ These three are used to populate the autocompletion for LUA.
 
 This is based on **cmp-nvim-lsp**. It adds autocomplete capabilities to nvim-cmp
 using the LSP servers configured in nvim-lspconfig.
+
+## Alpha-nvim
+
+Just a splash screen if no file is open.
