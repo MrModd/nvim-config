@@ -1,3 +1,7 @@
+--------------------------------
+-- Generic Vim configurations --
+--------------------------------
+
 vim.cmd("set encoding=utf-8")
 -- Line numbers
 vim.cmd("set ruler")
