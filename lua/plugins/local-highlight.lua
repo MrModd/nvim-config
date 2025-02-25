@@ -6,6 +6,7 @@
 
 return {
   "tzachar/local-highlight.nvim",
+  commit = "280b1b916183f373f340e8d2391cfda5c361f619", -- It's dangerous to update, the devs are very buggy
   config = function()
     require('local-highlight').setup({
       file_types = nil, -- If this is given only attach to this
