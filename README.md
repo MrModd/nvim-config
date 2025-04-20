@@ -113,3 +113,7 @@ Just a splash screen if no file is open.
 ## Lastplace
 
 Reopen the files at the last edit position.
+
+## StartupTime
+
+Show the time spent where during the startup phase.
