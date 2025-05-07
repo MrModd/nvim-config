@@ -9,12 +9,14 @@
 return {
   {
     "williamboman/mason.nvim",
+    commit = "4da89f3",
     config = function()
       require("mason").setup()
     end
   },
   {
     "williamboman/mason-lspconfig.nvim",
+    commit = "1a31f82",
     config = function()
       require("mason-lspconfig").setup({
         ensure_installed = {"bashls", -- Installed through npm

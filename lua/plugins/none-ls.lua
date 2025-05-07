@@ -8,6 +8,7 @@
 return {
   {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
+    commit = "1255518",
     config = function()
       require('mason-tool-installer').setup({
         ensure_installed = {
