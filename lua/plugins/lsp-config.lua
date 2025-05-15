@@ -11,7 +11,9 @@ return {
     "williamboman/mason.nvim",
     commit = "4da89f3",
     config = function()
-      require("mason").setup()
+      require("mason").setup({
+        ui = {border = "none"}
+      })
     end
   },
   {
