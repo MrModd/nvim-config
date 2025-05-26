@@ -6,6 +6,7 @@
 
 return {
   "goolord/alpha-nvim",
+  commit = "de72250",
   dependencies = {
     "nvim-tree/nvim-web-devicons",
   },
