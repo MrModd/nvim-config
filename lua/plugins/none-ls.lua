@@ -11,14 +11,13 @@ return {
     config = function()
       require('mason-tool-installer').setup({
         ensure_installed = {
-          "stylua", -- Formatter for LUA
+          "stylua",       -- Formatter for LUA
           "clang-format", -- Formatter for C
-          "black", -- Formatter for Python (requires Python >3.9)
-          "isort", -- Formatter for the imports of Python (requires Python >3.9)
-	  "shellcheck", -- Formatter for SH scripts
-	  "shfmt", -- Another formatter for SH scripts
+          "black",        -- Formatter for Python (requires Python >3.9)
+          "isort",        -- Formatter for the imports of Python (requires Python >3.9)
+          "shfmt",        -- Formatter for SH scripts
         },
-	-- LSP integration is handled by mason-lspconfig
+        -- LSP integration is handled by mason-lspconfig
         integrations = { ["mason-lspconfig"] = false },
       })
     end
@@ -31,7 +30,8 @@ return {
         null_ls.builtins.formatting.stylua,
         null_ls.builtins.formatting.clang_format,
         null_ls.builtins.formatting.black,
-        null_ls.builtins.formatting.isort
+        null_ls.builtins.formatting.isort,
+        null_ls.builtins.formatting.shfmt,
       })
       vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, { desc = "none-ls: format file" })
     end
