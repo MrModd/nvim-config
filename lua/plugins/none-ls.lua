@@ -8,15 +8,18 @@
 return {
   {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
-    commit = "1255518",
     config = function()
       require('mason-tool-installer').setup({
         ensure_installed = {
           "stylua", -- Formatter for LUA
           "clang-format", -- Formatter for C
           "black", -- Formatter for Python (requires Python >3.9)
-          "isort" -- Formatter for the imports of Python (requires Python >3.9)
-        }
+          "isort", -- Formatter for the imports of Python (requires Python >3.9)
+	  "shellcheck", -- Formatter for SH scripts
+	  "shfmt", -- Another formatter for SH scripts
+        },
+	-- LSP integration is handled by mason-lspconfig
+        integrations = { ["mason-lspconfig"] = false },
       })
     end
   },

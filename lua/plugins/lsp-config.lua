@@ -62,17 +62,4 @@ return {
       vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "nvim-lspconfig: error resolution" })
     end,
   },
-  -- mason-tool-installer (tools only; lspconfig integration OFF)
-  {
-    "WhoIsSethDaniel/mason-tool-installer.nvim",
-    dependencies = { "mason-org/mason.nvim" },
-    event = "VeryLazy",
-    config = function()
-      require("mason-tool-installer").setup({
-        ensure_installed = { "stylua", "shellcheck", "shfmt" },
-        integrations = { ["mason-lspconfig"] = false },
-        run_on_start = true,
-      })
-    end,
-  },
 }

@@ -3,7 +3,7 @@
 # Requirements
 
 Required packages to be present on the system:
-* neovim
+* neovim (tested on V0.11.4)
 * npm
 * A Nerd Font in the terminal
 
