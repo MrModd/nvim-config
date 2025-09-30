@@ -145,3 +145,9 @@ Show the time spent where during the startup phase.
 Use `:StartupTime` to invoke the plugin and show the time spent during boot.
 The plugin will launch a new instance of neovim and it will record the load
 time of the various components.
+
+## Copilot
+
+Use AI to boost autocomplete.
+
+Call `:Copilot setup` the first time to configure the access to GitHub.
