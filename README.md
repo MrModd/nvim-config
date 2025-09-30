@@ -14,17 +14,41 @@ Required packages to be present on the system:
 3. Trigger a cache refresh with fc-cache -f -v
 4. Switch the font of the terminal application to the Nerd Font
 
+# How to install
+
+This repository can be used as neovim config folder.
+Clone it with the following command:
+
+```
+git clone https://github.com/MrModd/nvim-config.git ~/.config/nvim
+```
+
+# Vim compatibility
+
+The basic configuration is done in a `vimrc` file to stay compatible with
+Vim as well.
+The `vimrc` of this repository can be used for Vim as well. It's sufficient to
+link it to the user's home.
+Assuming this repository is cloned in the default Neovim config location, you can
+link the `vimrc` with the following command:
+
+```
+ln -s ~/.config/nvim/vimrc ~/.vimrc
+```
+
 # Keybindings
 
 All keybindings can be listed with CTRL-x.
 
 The custom keybindings are prefixed to a quicker grep:
-* **Generic**: various shortcuts, not linked to any plugin
 * **Neotree**: file browser
 * **Telescope**: file search and grep shortcuts
 * **Fugitive**: git shortcuts
 * **nvim-lspconfig**: LSP servers shortcuts
 * **none-lua**: code formatters
+
+There are also generic shortcuts, defined in a vimrc file to
+be compatible with Vim.
 
 # Installed plugins
 
