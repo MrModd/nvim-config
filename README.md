@@ -148,6 +148,6 @@ time of the various components.
 
 ## Copilot
 
-Use AI to boost autocomplete.
+Use AI to boost autocomplete. Requires nodejs v20+.
 
 Call `:Copilot setup` the first time to configure the access to GitHub.
