@@ -25,9 +25,9 @@ set nocompatible
 set autoindent
 set smartindent
 " Always use spaces instead of tabs
-"set expandtab
+set expandtab
 " (alternative) convert spaces to tabs when possible
-set nosmarttab noexpandtab
+"set nosmarttab noexpandtab
 " How many columns a tab character is
 set tabstop=4
 " How many spaces a shift or backspace key inserts or removes
