@@ -151,3 +151,8 @@ time of the various components.
 Use AI to boost autocomplete. Requires nodejs v20+.
 
 Call `:Copilot setup` the first time to configure the access to GitHub.
+
+## Floatty
+
+Create a floating window with a terminal inside. Useful to run commands without
+leaving the editor.
