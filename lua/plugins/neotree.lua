@@ -15,8 +15,8 @@ return {
   },
   config = function()
     require("neo-tree").setup({
-      enable_git_status = true, -- It can slow down the opening of the buffers
-      enable_diagnostics = true, -- Not interesting
+      enable_git_status = false, -- It can slow down the opening of the buffers
+      enable_diagnostics = false, -- Not interesting
       filesystem = {
         filtered_items = {
           visible = true, -- This is what you want: If you set this to `true`, all "hide" just mean "dimmed out"
