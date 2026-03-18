@@ -46,6 +46,7 @@ The custom keybindings are prefixed to a quicker grep:
 * **Fugitive**: git shortcuts
 * **nvim-lspconfig**: LSP servers shortcuts
 * **none-lua**: code formatters
+* **Floatty**: floating terminal shortcuts
 
 There are also generic shortcuts, defined in a vimrc file to
 be compatible with Vim.
