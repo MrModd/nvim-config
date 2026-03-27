@@ -48,8 +48,13 @@ return {
                             "lua_ls",
                             "clangd", -- Not compatible with aarch64
                             "pylsp",
-        }
-	-- automatic_enable = true (default)
+        },
+        automatic_enable = {
+          "bashls",
+          "lua_ls",
+          "clangd",
+          "pylsp",
+        },
       })
 
     end,

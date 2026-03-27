@@ -15,13 +15,14 @@ return {
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
+      "hrsh7th/cmp-buffer",
       "L3MON4D3/LuaSnip",
       "saadparwaiz1/cmp_luasnip",
-      "rafamadriz/friendly-snippets"
+      "rafamadriz/friendly-snippets",
 	},
     config = function()
       local cmp = require('cmp')
-      require("luasnip.loaders.from_snipmate").lazy_load()
+      require("luasnip.loaders.from_vscode").lazy_load()
 
       cmp.setup({
         snippet = {
@@ -42,11 +43,11 @@ return {
         }),
         sources = cmp.config.sources({
           { name = 'nvim_lsp' },
-          -- { name = 'luasnip' }, -- For some reasons it doesn't work
+          { name = 'luasnip' },
         }, {
           { name = 'buffer' },
         }),
       })
-    end
+    end,
   },
 }
