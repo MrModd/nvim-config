@@ -16,6 +16,7 @@ return {
       vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = "Telescope: live grep" })
       vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = "Telescope: buffers" })
       vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = "Telescope: help tags" })
+      vim.keymap.set('n', '<leader>fr', builtin.registers, { desc = "Telescope: registers" })
       vim.keymap.set("n", "<C-x>", "<Cmd>Telescope keymaps<CR>", { desc = "Telescope: show all keybinds" })
 
       -- BEGIN: open Telescope in the current file's directory and open the selected file in an horizontal split
