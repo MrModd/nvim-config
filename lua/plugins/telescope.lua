@@ -29,6 +29,8 @@ return {
         local opts = {
           cwd = cwd,
           hidden = true,
+          no_ignore = true,
+          no_ignore_parent = true,
           prompt_title = "Files in: " .. cwd,
           attach_mappings = function(prompt_bufnr, map)
             local open_in_vsplit = function()
