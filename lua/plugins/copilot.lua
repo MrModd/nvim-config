@@ -7,5 +7,9 @@
 -- To install, run :Copilot setup
 
 return {
-    "github/copilot.vim"
+    "github/copilot.vim",
+    init = function()
+        -- Avoid npx cache/install failures; use the bundled language server
+        vim.g.copilot_npx_command = 0
+    end,
 }
