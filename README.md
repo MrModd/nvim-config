@@ -3,7 +3,14 @@
 # Requirements
 
 Required packages to be present on the system:
+* python3
+* python3-pip
+* python3-venv
+* curl
+* git
+* ripgrep (rg)
 * neovim (tested on V0.11.4)
+* nodejs > 22
 * npm
 * A Nerd Font in the terminal
 
